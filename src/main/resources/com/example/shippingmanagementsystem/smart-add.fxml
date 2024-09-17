@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #ADD8E6; -fx-background-size: cover;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.shippingmanagementsystem.SmartAdd" prefHeight="400.0" prefWidth="600.0">
+    <Text style="-fx-font-size: 50px; -fx-font-weight: bold; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1px;" text="Smart Add" />
+    <ListView fx:id="palletList" />
+    <TextField fx:id="descriptionField" promptText="Description" />
+    <TextField fx:id="quantityField" promptText="Quantity" />
+    <TextField fx:id="unitValueField" promptText="Unit Value" />
+    <TextField fx:id="totalWeightField" promptText="Total Weight" />
+    <TextField fx:id="totalSizeField" promptText="Total Size" />
+    <TextField fx:id="portIdentifierField" promptText="Port Identifier" />
+    <Button fx:id="smartAddButton" text="Smart Add" onAction="#smartAddPallet" style="-fx-background-color: #d01212; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200px; -fx-pref-height: 40px; -fx-stroke: black; -fx-stroke-width: 1px; -fx-background-radius: 0; -fx-background-insets: 0,1,2; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10 20; -fx-border-color: black; -fx-border-width: 0.5px; -fx-border-radius: 0;" onMouseEntered="#buttonHover" onMouseExited="#buttonExit" onMousePressed="#buttonPress" onMouseReleased="#buttonRelease" />
+</VBox>

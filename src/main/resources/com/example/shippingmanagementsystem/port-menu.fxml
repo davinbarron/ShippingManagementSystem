@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #ADD8E6; -fx-background-size: cover;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.shippingmanagementsystem.PortMenu" prefHeight="400.0" prefWidth="600.0">
+    <Text style="-fx-font-size: 50px; -fx-font-weight: bold; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1px;" text="Port Menu" />
+    <ListView fx:id="portList" />
+    <TextField fx:id="portNameField" promptText="Port Name" />
+    <TextField fx:id="portCodeField" promptText="Port Code" />
+    <TextField fx:id="countryField" promptText="Country" />
+    <Button fx:id="addButton" text="Add Port" style="-fx-background-color: #d01212; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 200px; -fx-pref-height: 40px; -fx-stroke: black; -fx-stroke-width: 1px; -fx-background-radius: 0; -fx-background-insets: 0,1,2; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14px; -fx-padding: 10 20; -fx-border-color: black; -fx-border-width: 0.5px; -fx-border-radius: 0;" onAction="#addPort" onMouseEntered="#buttonHover" onMouseExited="#buttonExit" onMousePressed="#buttonPress" onMouseReleased="#buttonRelease" />
+</VBox>
